@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.2%;
+
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBibGFuY28lMjB5JTIwbmVncm98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* cabezera */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+header figure {
+    background: rgba(199, 199, 199,0.7);
+    border-radius: 50%;
+}
+
+header figure img {
+    padding-top: 4px;
+    width: 140px;
+    height: 140px;
+    transform: translate(-6px, 3px);
+}
+
+form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #c7c7c7;
+    border-radius: 4px;
+    width: min(90%,398px);
+    margin: 0 auto;
+}
+
+h1, input, label, select {
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+div.final {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+div.final h1 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+form input,
+select {
+    justify-self: center;
+    width: min(90%,298px);
+    height: 36px;
+    line-height: 22px;
+    border-radius: 16px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0px #000;
+}
+
+option {
+    white-space: pre-wrap;
+    width: 298px;
+}
+
+form input::placeholder,
+select {
+    color: #000;
+    text-align: center;
+}
+
+
+.bottons {
+    display: inline-block;
+    margin-top: 12px;
+    transform: translateX(-6px);
+}
+.botton {
+    width: 140px;
+    margin-left: 12px;
+}
+
+.botton-enviar {
+    background-color: #0000ff;
+    border: none;
+    color: #ffffff;
+}
+
+.botton-enviar:hover {
+    background-color: #0000d1;
+    cursor: pointer;
+}
+
+.botton-reset {
+    border: none;
+    color: #ff0000;
+    background-color: #ffffff;
+    border: 3.89px solid #ff2121fa;
+    cursor: pointer;
+}
+
+.botton-reset:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #18122B;
+    --dark_soft: #393053;
+    --dark_purple: #443C68;
+    --violet: #635985;
+    --sm: 1.2rem;
+    --md: 2.4rem;
+    --lg: 3.6rem;
+}
+
+html {
+    font-size: 65.2%;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: var(--lg);
+    text-align: center;
+    margin: 4px 0 12px 0;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(25px, 300px));
+    grid-template-rows: repeat(3,minmax(60px,120px));
+    align-items: center;
+    gap: 12px;
+    background-color: var(--violet);
+    width: 50rem;
+    height: 48%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.calculadora input:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.calculadora input:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.calculadora input:nth-child(1),
+.calculadora input:nth-child(2) {
+    width: 90%;
+    height: 75%;
+    place-self: center;
+    border-radius: 12px;
+    font-size: var(--md);
+}
+
+.contenido {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+#operaciones {
+    height: 48px;
+    width: 120px;
+    border: none;
+
+}
+
+#calculo {
+    color: white;
+    background-color: var(--dark_soft);
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    width: 80%;
+    font-size: var(--sm);
+    place-self: center;
+    transition: 1.2s;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#calculo:hover, 
+#calculo:active {
+    background-color: var(--dark_purple);
+}
+.calculadora__resultado {
+    place-items: center;
+    grid-area: 1 / 3 / 3/ 5;
+}
+
+.calculadora__resultado p:nth-child(1) {
+    font-size: var(--md);
+}
+
+#resultado {
+    text-align: center;
+    font-size: var(--lg);
+    white-space: pre-wrap;
+}

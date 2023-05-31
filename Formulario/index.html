@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ingresa</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="https://endearing-lolly-3ac55a.netlify.app/icons/logo%20de%20la%20tienda.webp" alt="Logo de la empresa">
+        </figure>
+    </header>
+
+    <main>
+        <form action="felecidadaes.html" method="post">
+            <h1>Ingreso:</h1>
+
+            <label for="usuario">Elige usuario</label>
+            <select name="usuario" id="usuario">
+                
+                <option value="">Jorge</option>
+                <option value="">Antonia</option>
+                <option value="">Teodora Vicenta</option>
+            </select>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="*******" required>
+            <label for="email">Correo:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+
+            <div class="bottons">
+                <input type="submit" value="Enviar" class="botton-enviar botton">
+
+                <input type="reset" value="Borrar" class="botton-reset botton">
+            </div>
+
+            
+        </form>
+    </main>
+</body>
+</html>
