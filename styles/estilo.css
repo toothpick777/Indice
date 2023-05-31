@@ -24,6 +24,9 @@ ul li a img {
 	width: 16rem;
 	height: 16rem;
 	border-radius: 50%;
+	object-fit: cover;
+	border-bottom: 2px solid #808080;
+	border-left: 2px solid #808080;
 }
 
 h1, p, figure,figcaption {
@@ -43,6 +46,7 @@ figure, figcaption {
 
 #proyectos {
 	border-bottom: 2px solid grey;
+	    padding-bottom: 8px;
 }
 
 #lista__proyecto {
