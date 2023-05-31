@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 65.2%;
+}
+
+body {
+	font-family: 'Abril Fatface', cursive;
+	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a img {
+	width: 16rem;
+	height: 16rem;
+	border-radius: 50%;
+}
+
+h1, p, figure,figcaption {
+	margin-top: 12px;
+	font-size: 4rem;
+	margin-bottom: 12px;
+	text-align: center;
+}
+p {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+figure, figcaption {
+ 	font-size: 1.2rem;
+}
+
+#proyectos {
+	border-bottom: 2px solid grey;
+}
+
+#lista__proyecto {
+	width: 670px;
+	display: grid;
+	grid-template-columns:  repeat( auto-fill, minmax(200px,1fr));
+	grid-template-rows: auto;
+	justify-items: center;
+	gap: 16px;
+    padding: 16px;
+	margin: 0 auto;
+}
+
+#descripcion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.foto-perfil img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
