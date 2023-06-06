@@ -50,7 +50,7 @@ figure, figcaption {
 }
 
 #lista__proyecto {
-	width: 670px;
+	width: min(100%,670px);
 	display: grid;
 	grid-template-columns:  repeat( auto-fill, minmax(200px,1fr));
 	grid-template-rows: auto;
